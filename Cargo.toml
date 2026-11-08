@@ -1,0 +1,42 @@
+[package]
+name = "mina-rosetta-sdk"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.88"
+license = "Apache-2.0"
+description = "Rust SDK for the Mina Rosetta (Coinbase Mesh) API: typed Data and Construction endpoints"
+repository = "https://github.com/o1-labs/mina-rosetta-sdk-rust"
+homepage = "https://github.com/o1-labs/mina-rosetta-sdk-rust"
+documentation = "https://docs.rs/mina-rosetta-sdk"
+readme = "README.md"
+authors = ["O(1) Labs <build@o1labs.org>"]
+keywords = ["mina", "blockchain", "rosetta", "mesh", "cryptocurrency"]
+categories = ["api-bindings", "cryptography::cryptocurrencies"]
+exclude = [".github/", "scripts/", "tests/integration_tests.rs"]
+
+[package.metadata.docs.rs]
+all-features = true
+
+[features]
+default = ["native-tls"]
+# TLS for `https://` endpoints, from the system's OpenSSL (or the platform's
+# TLS library on macOS and Windows).
+native-tls = ["reqwest/default-tls"]
+# TLS from rustls with the Mozilla root certificates: no OpenSSL to build or
+# link. Use with `default-features = false`.
+rustls-tls = ["reqwest/rustls-tls"]
+
+[dependencies]
+# reqwest's default features without its TLS: the features above choose it
+reqwest = { version = "0.12", default-features = false, features = ["json", "charset", "http2", "system-proxy"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serde_with = { version = "3", default-features = false, features = ["macros"] }
+strum = { version = "0.27", features = ["derive"] }
+thiserror = "2"
+tokio = { version = "1", features = ["rt", "time"] }
+tracing = "0.1"
+
+[dev-dependencies]
+wiremock = "0.6"
+tokio = { version = "1", features = ["full", "test-util"] }

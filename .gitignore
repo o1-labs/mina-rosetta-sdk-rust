@@ -1,0 +1,10 @@
+/target
+Cargo.lock
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+cobertura.xml
+lcov.info
+tarpaulin-report.*

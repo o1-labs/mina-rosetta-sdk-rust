@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "sender": "B62qoEF165DEGGzMsehwizog6evVYrnTVo1mjm7H58TzsT6LrReLw1v",
+    "nonce": "0",
+    "token_id": "wSHV2S4qX9jFsLjQo8r1BsMLH2ZRKsZx6EJd1sbozGPieEC4Jf",
+    "receiver": "B62qrB91aiHjz54M39RX6J9Y6eJJ2SVi5XThwYnj6bME4PYXkxFFJKW",
+    "memo": "rosetta sdk"
+  },
+  "suggested_fee": [
+    {
+      "value": "100000000",
+      "currency": {
+        "symbol": "MINA",
+        "decimals": 9
+      },
+      "metadata": {
+        "minimum_fee": {
+          "value": "1000000",
+          "currency": {
+            "symbol": "MINA",
+            "decimals": 9
+          }
+        }
+      }
+    }
+  ]
+}

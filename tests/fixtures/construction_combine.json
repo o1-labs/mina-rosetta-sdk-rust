@@ -1,0 +1,3 @@
+{
+  "signed_transaction": "{\"signature\":\"C71C235884430C70F3E2218FE9AAACD56BD3A24251B51B7A43C1ACB489A4820740C76335F8FE19F024BF2A31DAFE711B70F69333C42951126E63B121248C7427\",\"payment\":{\"to\":\"B62qrB91aiHjz54M39RX6J9Y6eJJ2SVi5XThwYnj6bME4PYXkxFFJKW\",\"from\":\"B62qoEF165DEGGzMsehwizog6evVYrnTVo1mjm7H58TzsT6LrReLw1v\",\"fee\":\"10000000\",\"token\":\"wSHV2S4qX9jFsLjQo8r1BsMLH2ZRKsZx6EJd1sbozGPieEC4Jf\",\"nonce\":\"0\",\"memo\":\"rosetta sdk\",\"amount\":\"1000000000\",\"valid_until\":null},\"stake_delegation\":null}"
+}

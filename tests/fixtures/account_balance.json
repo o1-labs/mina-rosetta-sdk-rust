@@ -1,0 +1,24 @@
+{
+  "block_identifier": {
+    "index": 6,
+    "hash": "3NLfGMLi1i6AGNjJFHuq4RtzcxPkHsoLCqFZ9y5JtCgzouRq7Qwj"
+  },
+  "balances": [
+    {
+      "value": "1000000000000",
+      "currency": {
+        "symbol": "MINA",
+        "decimals": 9
+      },
+      "metadata": {
+        "locked_balance": 0,
+        "liquid_balance": 1000000000000,
+        "total_balance": 1000000000000
+      }
+    }
+  ],
+  "metadata": {
+    "created_via_historical_lookup": false,
+    "nonce": "0"
+  }
+}

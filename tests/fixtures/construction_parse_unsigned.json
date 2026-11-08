@@ -1,0 +1,71 @@
+{
+  "operations": [
+    {
+      "operation_identifier": {
+        "index": 0
+      },
+      "type": "fee_payment",
+      "account": {
+        "address": "B62qoEF165DEGGzMsehwizog6evVYrnTVo1mjm7H58TzsT6LrReLw1v",
+        "metadata": {
+          "token_id": "wSHV2S4qX9jFsLjQo8r1BsMLH2ZRKsZx6EJd1sbozGPieEC4Jf"
+        }
+      },
+      "amount": {
+        "value": "-10000000",
+        "currency": {
+          "symbol": "MINA",
+          "decimals": 9
+        }
+      }
+    },
+    {
+      "operation_identifier": {
+        "index": 1
+      },
+      "type": "payment_source_dec",
+      "account": {
+        "address": "B62qoEF165DEGGzMsehwizog6evVYrnTVo1mjm7H58TzsT6LrReLw1v",
+        "metadata": {
+          "token_id": "wSHV2S4qX9jFsLjQo8r1BsMLH2ZRKsZx6EJd1sbozGPieEC4Jf"
+        }
+      },
+      "amount": {
+        "value": "-1000000000",
+        "currency": {
+          "symbol": "MINA",
+          "decimals": 9
+        }
+      }
+    },
+    {
+      "operation_identifier": {
+        "index": 2
+      },
+      "related_operations": [
+        {
+          "index": 1
+        }
+      ],
+      "type": "payment_receiver_inc",
+      "account": {
+        "address": "B62qrB91aiHjz54M39RX6J9Y6eJJ2SVi5XThwYnj6bME4PYXkxFFJKW",
+        "metadata": {
+          "token_id": "wSHV2S4qX9jFsLjQo8r1BsMLH2ZRKsZx6EJd1sbozGPieEC4Jf"
+        }
+      },
+      "amount": {
+        "value": "1000000000",
+        "currency": {
+          "symbol": "MINA",
+          "decimals": 9
+        }
+      }
+    }
+  ],
+  "signers": [],
+  "account_identifier_signers": [],
+  "metadata": {
+    "memo": "rosetta sdk"
+  }
+}

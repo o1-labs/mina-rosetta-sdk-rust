@@ -1,0 +1,18 @@
+{
+  "block": {
+    "block_identifier": {
+      "index": 1,
+      "hash": "3NKexkroChfBdUTojTbrsYyQYWejPhCYAybhT4Gi5RpgcvRWnP8L"
+    },
+    "parent_block_identifier": {
+      "index": 1,
+      "hash": "3NKexkroChfBdUTojTbrsYyQYWejPhCYAybhT4Gi5RpgcvRWnP8L"
+    },
+    "timestamp": 1794134843821,
+    "transactions": [],
+    "metadata": {
+      "creator": "B62qiy32p8kAKnny8ZFwoMhYpBppM1DWVCqAPBYNcXnsAHhnfAAuXgg"
+    }
+  },
+  "other_transactions": []
+}

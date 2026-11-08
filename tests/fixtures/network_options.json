@@ -1,0 +1,196 @@
+{
+  "version": {
+    "rosetta_version": "1.4.9",
+    "node_version": "1.0.0"
+  },
+  "allow": {
+    "operation_statuses": [
+      {
+        "status": "Success",
+        "successful": true
+      },
+      {
+        "status": "Failed",
+        "successful": false
+      }
+    ],
+    "operation_types": [
+      "fee_payer_dec",
+      "fee_receiver_inc",
+      "coinbase_inc",
+      "account_creation_fee_via_payment",
+      "account_creation_fee_via_fee_receiver",
+      "payment_source_dec",
+      "payment_receiver_inc",
+      "fee_payment",
+      "delegate_change",
+      "zkapp_fee_payer_dec",
+      "zkapp_balance_update",
+      "account_creation_fee_via_zkapp"
+    ],
+    "errors": [
+      {
+        "code": 1,
+        "message": "SQL failure",
+        "description": "We encountered a SQL failure.",
+        "retriable": false
+      },
+      {
+        "code": 2,
+        "message": "JSON parse error",
+        "description": "We encountered an error while parsing JSON.",
+        "retriable": false
+      },
+      {
+        "code": 3,
+        "message": "GraphQL query failed",
+        "description": "The GraphQL query failed.",
+        "retriable": true
+      },
+      {
+        "code": 4,
+        "message": "Network doesn't exist",
+        "description": "The network doesn't exist.",
+        "retriable": false
+      },
+      {
+        "code": 5,
+        "message": "Chain info missing",
+        "description": "Some chain info is missing.",
+        "retriable": true
+      },
+      {
+        "code": 6,
+        "message": "Account not found",
+        "description": "That account could not be found.",
+        "retriable": true
+      },
+      {
+        "code": 7,
+        "message": "Internal invariant violation (you found a bug)",
+        "description": "One of our internal invariants was violated. (That means you found a bug!)",
+        "retriable": false
+      },
+      {
+        "code": 8,
+        "message": "Transaction not found",
+        "description": "That transaction could not be found.",
+        "retriable": true
+      },
+      {
+        "code": 9,
+        "message": "Block not found",
+        "description": "We couldn't find the block in the archive node, specified by . Ask a friend for the missing data.",
+        "retriable": true
+      },
+      {
+        "code": 10,
+        "message": "Malformed public key",
+        "description": "The public key you provided was malformed.",
+        "retriable": false
+      },
+      {
+        "code": 11,
+        "message": "Cannot convert operations to valid transaction",
+        "description": "We could not convert those operations to a valid transaction.",
+        "retriable": false
+      },
+      {
+        "code": 12,
+        "message": "Unsupported operation for construction",
+        "description": "An operation you provided isn't supported for construction.",
+        "retriable": false
+      },
+      {
+        "code": 13,
+        "message": "Signature missing",
+        "description": "Your request is missing a signature.",
+        "retriable": false
+      },
+      {
+        "code": 14,
+        "message": "Invalid public key format",
+        "description": "The public key you provided had an invalid format.",
+        "retriable": false
+      },
+      {
+        "code": 15,
+        "message": "No options provided",
+        "description": "Your request is missing options.",
+        "retriable": false
+      },
+      {
+        "code": 16,
+        "message": "Exception",
+        "description": "We encountered an internal exception while processing your request. (That means you found a bug!)",
+        "retriable": false
+      },
+      {
+        "code": 17,
+        "message": "Invalid signature",
+        "description": "Your request has an invalid signature.",
+        "retriable": false
+      },
+      {
+        "code": 18,
+        "message": "Invalid memo",
+        "description": "Your request has an invalid memo.",
+        "retriable": false
+      },
+      {
+        "code": 19,
+        "message": "No GraphQL URI set",
+        "description": "This Rosetta instance is running without a GraphQL URI set but this request requires one.",
+        "retriable": false
+      },
+      {
+        "code": 20,
+        "message": "Can't send transaction: No sender found in ledger",
+        "description": "This could occur because the node isn't fully synced or the account doesn't actually exist in the ledger yet.",
+        "retriable": true
+      },
+      {
+        "code": 21,
+        "message": "Can't send transaction: A duplicate is detected",
+        "description": "This could occur if you've already sent this transaction. Please report a bug if you are confident you didn't already send this exact transaction.",
+        "retriable": false
+      },
+      {
+        "code": 22,
+        "message": "Can't send transaction: Nonce invalid",
+        "description": "You must use the current nonce in your account in the ledger or one that is inferred based on pending transactions in the transaction pool.",
+        "retriable": false
+      },
+      {
+        "code": 23,
+        "message": "Can't send transaction: Fee too small",
+        "description": "The minimum fee on transactions is  . Please increase your fee to at least this amount.",
+        "retriable": false
+      },
+      {
+        "code": 24,
+        "message": "Can't send transaction: Invalid signature",
+        "description": "An invalid signature is attached to this transaction",
+        "retriable": false
+      },
+      {
+        "code": 25,
+        "message": "Can't send transaction: Insufficient balance",
+        "description": "This account do not have sufficient balance perform the requested transaction.",
+        "retriable": false
+      },
+      {
+        "code": 26,
+        "message": "Can't send transaction: Expired",
+        "description": "This transaction is expired. Please try again with a larger valid_until.",
+        "retriable": false
+      }
+    ],
+    "historical_balance_lookup": true,
+    "call_methods": [],
+    "balance_exemptions": [],
+    "mempool_coins": false,
+    "block_hash_case": "case_sensitive",
+    "transaction_hash_case": "case_sensitive"
+  }
+}

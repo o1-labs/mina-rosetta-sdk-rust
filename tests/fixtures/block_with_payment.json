@@ -1,0 +1,152 @@
+{
+  "block": {
+    "block_identifier": {
+      "index": 6,
+      "hash": "3NLfGMLi1i6AGNjJFHuq4RtzcxPkHsoLCqFZ9y5JtCgzouRq7Qwj"
+    },
+    "parent_block_identifier": {
+      "index": 5,
+      "hash": "3NKPEvA4hgHRhDbnkbQe8LGwS4B4KLabN8BKAT4W4JcUwFbwJiPr"
+    },
+    "timestamp": 1794135353821,
+    "transactions": [
+      {
+        "transaction_identifier": {
+          "hash": "coinbase:1:0:5Jud5nTnyf1PE25hNSnnbnvuCLJQFteHS7NedSJfrFUGULF2yyNG"
+        },
+        "operations": [
+          {
+            "operation_identifier": {
+              "index": 0
+            },
+            "type": "coinbase_inc",
+            "status": "Success",
+            "account": {
+              "address": "B62qpY7DP9uXLeCb8eggjPzBPMYYNMmsUXM4WV8f4X9XjC8g277K9c7",
+              "metadata": {
+                "token_id": "wSHV2S4qX9jFsLjQo8r1BsMLH2ZRKsZx6EJd1sbozGPieEC4Jf"
+              }
+            },
+            "amount": {
+              "value": "360000000000",
+              "currency": {
+                "symbol": "MINA",
+                "decimals": 9
+              }
+            }
+          }
+        ],
+        "related_transactions": []
+      },
+      {
+        "transaction_identifier": {
+          "hash": "fee_transfer:2:0:5JusaNwLbUrDjEDY5UhM2UBVguhFhUi8vCizeWs9BzTdf4zprGRx"
+        },
+        "operations": [
+          {
+            "operation_identifier": {
+              "index": 0
+            },
+            "type": "fee_receiver_inc",
+            "status": "Success",
+            "account": {
+              "address": "B62qpY7DP9uXLeCb8eggjPzBPMYYNMmsUXM4WV8f4X9XjC8g277K9c7",
+              "metadata": {
+                "token_id": "wSHV2S4qX9jFsLjQo8r1BsMLH2ZRKsZx6EJd1sbozGPieEC4Jf"
+              }
+            },
+            "amount": {
+              "value": "100000000",
+              "currency": {
+                "symbol": "MINA",
+                "decimals": 9
+              }
+            }
+          }
+        ],
+        "related_transactions": []
+      },
+      {
+        "transaction_identifier": {
+          "hash": "5JvRUHv54RKxu4BbhUYEqCT7ZafJNrL6M4kZLVNYfDUEyNyQCyLf"
+        },
+        "operations": [
+          {
+            "operation_identifier": {
+              "index": 0
+            },
+            "type": "fee_payment",
+            "status": "Success",
+            "account": {
+              "address": "B62qqmL5Z8qh5p43ML2RPcZq8fxJPiGYWrycUWnkCNPAixbgjraj9zu",
+              "metadata": {
+                "token_id": "wSHV2S4qX9jFsLjQo8r1BsMLH2ZRKsZx6EJd1sbozGPieEC4Jf"
+              }
+            },
+            "amount": {
+              "value": "-100000000",
+              "currency": {
+                "symbol": "MINA",
+                "decimals": 9
+              }
+            }
+          },
+          {
+            "operation_identifier": {
+              "index": 1
+            },
+            "type": "payment_source_dec",
+            "status": "Success",
+            "account": {
+              "address": "B62qqmL5Z8qh5p43ML2RPcZq8fxJPiGYWrycUWnkCNPAixbgjraj9zu",
+              "metadata": {
+                "token_id": "wSHV2S4qX9jFsLjQo8r1BsMLH2ZRKsZx6EJd1sbozGPieEC4Jf"
+              }
+            },
+            "amount": {
+              "value": "-1000000000",
+              "currency": {
+                "symbol": "MINA",
+                "decimals": 9
+              }
+            }
+          },
+          {
+            "operation_identifier": {
+              "index": 2
+            },
+            "related_operations": [
+              {
+                "index": 1
+              }
+            ],
+            "type": "payment_receiver_inc",
+            "status": "Success",
+            "account": {
+              "address": "B62qrB91aiHjz54M39RX6J9Y6eJJ2SVi5XThwYnj6bME4PYXkxFFJKW",
+              "metadata": {
+                "token_id": "wSHV2S4qX9jFsLjQo8r1BsMLH2ZRKsZx6EJd1sbozGPieEC4Jf"
+              }
+            },
+            "amount": {
+              "value": "1000000000",
+              "currency": {
+                "symbol": "MINA",
+                "decimals": 9
+              }
+            }
+          }
+        ],
+        "related_transactions": [],
+        "metadata": {
+          "nonce": 4,
+          "memo": "load-1 5"
+        }
+      }
+    ],
+    "metadata": {
+      "creator": "B62qpY7DP9uXLeCb8eggjPzBPMYYNMmsUXM4WV8f4X9XjC8g277K9c7"
+    }
+  },
+  "other_transactions": []
+}

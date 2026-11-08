@@ -1,0 +1,14 @@
+{
+  "code": 3,
+  "message": "GraphQL query failed",
+  "description": "The GraphQL query failed.",
+  "retriable": true,
+  "details": {
+    "body": [
+      "Graphql_mina_query",
+      "Argument `publicKey` of type `PublicKey` expected on field `account`, found \"B62qnot\". (in null)"
+    ],
+    "error": "Argument `publicKey` of type `PublicKey` expected on field `account`, found \"B62qnot\". (in null)",
+    "extra": "Explicit error response from Mina Daemon"
+  }
+}

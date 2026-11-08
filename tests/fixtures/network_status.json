@@ -1,0 +1,27 @@
+{
+  "current_block_identifier": {
+    "index": 6,
+    "hash": "3NLfGMLi1i6AGNjJFHuq4RtzcxPkHsoLCqFZ9y5JtCgzouRq7Qwj"
+  },
+  "current_block_timestamp": 1794135353821,
+  "genesis_block_identifier": {
+    "index": 1,
+    "hash": "3NKexkroChfBdUTojTbrsYyQYWejPhCYAybhT4Gi5RpgcvRWnP8L"
+  },
+  "sync_status": {
+    "current_index": 6,
+    "stage": "Synced",
+    "synced": true
+  },
+  "peers": [
+    {
+      "peer_id": "12D3KooWHq4xgE4miUdQzo36xfdmYeRyUyFmBPJ7sLHNnMtkrFAz"
+    },
+    {
+      "peer_id": "12D3KooWN2Ers6wDipQoQwb1g4nQJMhgpzPjnuEwSRfiPZZBaYnj"
+    },
+    {
+      "peer_id": "12D3KooWN2Ers6wDipQoQwb1g4nQJMhgpzPjnuEwSRfiPZZBaYnj"
+    }
+  ]
+}
