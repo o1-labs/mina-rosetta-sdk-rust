@@ -15,7 +15,7 @@ jobs:
     name: Check, lint, test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: dtolnay/rust-toolchain@stable
         with:
           components: rustfmt, clippy
@@ -40,7 +40,7 @@ jobs:
     name: Build on the declared MSRV
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Read rust-version from Cargo.toml
         id: msrv
         run: echo "version=$(cargo metadata --format-version 1 --no-deps | jq -r '.packages[0].rust_version')" >> "$GITHUB_OUTPUT"
@@ -55,7 +55,7 @@ jobs:
     name: Dependency audit
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: EmbarkStudios/cargo-deny-action@v2
         with:
           # the dependencies of every TLS choice, not only the default one
